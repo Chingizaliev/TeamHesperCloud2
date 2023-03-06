@@ -30,6 +30,17 @@ public class LoginPage {
     @FindBy(xpath = "(//div)[6]/a[2]")
     public WebElement getLogInWithDeviceLink;
 
+
+
+    @FindBy(xpath = "//span[.='Files']")
+    public WebElement files;
+
+    @FindBy(xpath = "//a[@class='action action-menu permanent']")
+    public WebElement favorites;
+
+    @FindBy(xpath="//span[.='Add to favorites']")
+    public WebElement addToFavorites;
+
 //TODO please find the link when you hover over the email or password window.
   //  @FindBy()
   //  public WebElement pleaseFillOutFieldPopOut;
@@ -53,6 +64,9 @@ public class LoginPage {
         this.inputUsernameOrEmail.sendKeys(user);
         this.inputPassword.sendKeys(pass);
         this.logInBtn.click();
+
+
+
     }
 
     }
