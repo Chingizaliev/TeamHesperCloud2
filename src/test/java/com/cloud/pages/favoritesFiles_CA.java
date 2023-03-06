@@ -21,5 +21,4 @@ public WebElement files;
  @FindBy(xpath="//span[.='Add to favorites']")
  public WebElement addToFavorites;
 
-
 }
